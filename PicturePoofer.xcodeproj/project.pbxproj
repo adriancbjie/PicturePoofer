@@ -15,6 +15,7 @@
 		3A77BC7314E221D200AE45A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77BC7214E221D200AE45A4 /* AppDelegate.m */; };
 		3A77BC7614E221D200AE45A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77BC7514E221D200AE45A4 /* ViewController.m */; };
 		3A77BC7914E221D200AE45A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC7714E221D200AE45A4 /* ViewController.xib */; };
+		3A77BC8F14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3A77BC7414E221D200AE45A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3A77BC7514E221D200AE45A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A77BC7814E221D200AE45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Northern_Iraq_landscape.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		3A77BC5314E221D200AE45A4 = {
 			isa = PBXGroup;
 			children = (
+				3A77BC9014E22E4B00AE45A4 /* Resources */,
 				3A77BC6814E221D200AE45A4 /* PicturePoofer */,
 				3A77BC6114E221D200AE45A4 /* Frameworks */,
 				3A77BC5F14E221D200AE45A4 /* Products */,
@@ -96,6 +99,14 @@
 				3A77BC7014E221D200AE45A4 /* PicturePoofer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A77BC9014E22E4B00AE45A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				3A77BC6D14E221D200AE45A4 /* InfoPlist.strings in Resources */,
 				3A77BC7914E221D200AE45A4 /* ViewController.xib in Resources */,
+				3A77BC8F14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

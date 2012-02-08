@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIImageView *image;
+@property (nonatomic, strong) IBOutlet UIButton *applyEffectButton;
+
 @end
