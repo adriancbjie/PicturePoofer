@@ -16,6 +16,7 @@
 		3A77BC7614E221D200AE45A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77BC7514E221D200AE45A4 /* ViewController.m */; };
 		3A77BC7914E221D200AE45A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC7714E221D200AE45A4 /* ViewController.xib */; };
 		3A77BC8F14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */; };
+		3AAD851C14ECBC43003122DF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAD851B14ECBC43003122DF /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3A77BC7514E221D200AE45A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A77BC7814E221D200AE45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Northern_Iraq_landscape.jpg; sourceTree = "<group>"; };
+		3AAD851B14ECBC43003122DF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAD851C14ECBC43003122DF /* CoreImage.framework in Frameworks */,
 				3A77BC6314E221D200AE45A4 /* UIKit.framework in Frameworks */,
 				3A77BC6514E221D200AE45A4 /* Foundation.framework in Frameworks */,
 				3A77BC6714E221D200AE45A4 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +73,7 @@
 		3A77BC6114E221D200AE45A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AAD851B14ECBC43003122DF /* CoreImage.framework */,
 				3A77BC6214E221D200AE45A4 /* UIKit.framework */,
 				3A77BC6414E221D200AE45A4 /* Foundation.framework */,
 				3A77BC6614E221D200AE45A4 /* CoreGraphics.framework */,
@@ -286,6 +290,7 @@
 				3A77BC7E14E221D200AE45A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

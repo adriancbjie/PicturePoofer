@@ -3,14 +3,38 @@
 //  PicturePoofer
 //
 //  Created by Adrian Cheng Bing Jie on 8/2/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 adriancbjie. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @implementation ViewController
-@synthesize image, applyEffectButton;
+@synthesize imageView, applyEffectButton;
 
+-(IBAction) appleEffect:(id)sender{
+    //load the CIImage
+    CIImage *beginImage = 
+    [CIImage imageWithCGImage:[self.imageView.image CGImage]];
+    CIContext *context = [CIContext contextWithOptions:nil];
+    
+    //declare filter with sepia effect
+    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone" 
+                                  keysAndValues: kCIInputImageKey, beginImage, 
+                        @"inputIntensity", [NSNumber numberWithFloat:0.8], nil];
+    CIImage *outputImage = [filter outputImage];
+    
+    //apply filter
+    CGImageRef cgimg = 
+    [context createCGImage:outputImage fromRect:[outputImage extent]];
+    UIImage *newImg = [UIImage imageWithCGImage:cgimg];
+    
+    //set the imageview with the new image
+    [imageView setImage:newImg];
+    
+    CGImageRelease(cgimg);
+}
+
+//here onwards are automatically generated methods
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
