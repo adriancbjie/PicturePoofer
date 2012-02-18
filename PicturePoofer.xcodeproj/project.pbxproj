@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A41745E14EFAF2600D166E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6614E221D200AE45A4 /* CoreGraphics.framework */; };
 		3A77BC6314E221D200AE45A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6214E221D200AE45A4 /* UIKit.framework */; };
 		3A77BC6514E221D200AE45A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6414E221D200AE45A4 /* Foundation.framework */; };
-		3A77BC6714E221D200AE45A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6614E221D200AE45A4 /* CoreGraphics.framework */; };
 		3A77BC6D14E221D200AE45A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC6B14E221D200AE45A4 /* InfoPlist.strings */; };
 		3A77BC6F14E221D200AE45A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77BC6E14E221D200AE45A4 /* main.m */; };
 		3A77BC7314E221D200AE45A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77BC7214E221D200AE45A4 /* AppDelegate.m */; };
@@ -17,6 +17,8 @@
 		3A77BC7914E221D200AE45A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC7714E221D200AE45A4 /* ViewController.xib */; };
 		3A77BC8F14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */; };
 		3AAD851C14ECBC43003122DF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAD851B14ECBC43003122DF /* CoreImage.framework */; };
+		3AAD852614ECD341003122DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAD852514ECD341003122DF /* QuartzCore.framework */; };
+		3ADA4FF014EFD78F007B2785 /* tower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA4FEF14EFD78F007B2785 /* tower.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		3A77BC7814E221D200AE45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Northern_Iraq_landscape.jpg; sourceTree = "<group>"; };
 		3AAD851B14ECBC43003122DF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3AAD852514ECD341003122DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3ADA4FEF14EFD78F007B2785 /* tower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tower.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAD852614ECD341003122DF /* QuartzCore.framework in Frameworks */,
 				3AAD851C14ECBC43003122DF /* CoreImage.framework in Frameworks */,
 				3A77BC6314E221D200AE45A4 /* UIKit.framework in Frameworks */,
 				3A77BC6514E221D200AE45A4 /* Foundation.framework in Frameworks */,
-				3A77BC6714E221D200AE45A4 /* CoreGraphics.framework in Frameworks */,
+				3A41745E14EFAF2600D166E9 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,7 @@
 		3A77BC6114E221D200AE45A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AAD852514ECD341003122DF /* QuartzCore.framework */,
 				3AAD851B14ECBC43003122DF /* CoreImage.framework */,
 				3A77BC6214E221D200AE45A4 /* UIKit.framework */,
 				3A77BC6414E221D200AE45A4 /* Foundation.framework */,
@@ -108,6 +114,7 @@
 		3A77BC9014E22E4B00AE45A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3ADA4FEF14EFD78F007B2785 /* tower.jpg */,
 				3A77BC8E14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg */,
 			);
 			name = Resources;
@@ -139,7 +146,7 @@
 		3A77BC5514E221D200AE45A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 3A77BC5814E221D200AE45A4 /* Build configuration list for PBXProject "PicturePoofer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -166,6 +173,7 @@
 				3A77BC6D14E221D200AE45A4 /* InfoPlist.strings in Resources */,
 				3A77BC7914E221D200AE45A4 /* ViewController.xib in Resources */,
 				3A77BC8F14E22E4500AE45A4 /* Northern_Iraq_landscape.jpg in Resources */,
+				3ADA4FF014EFD78F007B2785 /* tower.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

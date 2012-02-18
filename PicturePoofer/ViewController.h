@@ -13,6 +13,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIButton *applyEffectButton;
 
--(IBAction) appleEffect:(id)sender;
+-(IBAction) applyEffect:(id)sender;
 
 @end

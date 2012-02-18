@@ -11,27 +11,35 @@
 @implementation ViewController
 @synthesize imageView, applyEffectButton;
 
--(IBAction) appleEffect:(id)sender{
-    //load the CIImage
-    CIImage *beginImage = 
-    [CIImage imageWithCGImage:[self.imageView.image CGImage]];
-    CIContext *context = [CIContext contextWithOptions:nil];
+-(IBAction) applyEffect:(id)sender{
+    //prepare settings for my blank context, then declare the context
+    UIGraphicsBeginImageContextWithOptions(imageView.image.size, YES, 0);
     
-    //declare filter with sepia effect
-    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone" 
-                                  keysAndValues: kCIInputImageKey, beginImage, 
-                        @"inputIntensity", [NSNumber numberWithFloat:0.8], nil];
-    CIImage *outputImage = [filter outputImage];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGImageRef imageRef =  imageView.image.CGImage;
+        CGRect frame =  CGRectMake(0,0,imageView.image.size.width,imageView.image.size.height);
     
-    //apply filter
-    CGImageRef cgimg = 
-    [context createCGImage:outputImage fromRect:[outputImage extent]];
-    UIImage *newImg = [UIImage imageWithCGImage:cgimg];
+    CGContextSetAlpha (context,0.5f);
+    CGContextSetShadow (context,frame.size,1.0f);
+    CGContextSetRGBFillColor (context,1.0f,0.5f,0.5f,1.0f);
+                                   
+
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 0.0f, imageView.image.size.height);
+    CGContextScaleCTM(context, 1.0f, -1.0f);
     
+
+    
+    CGContextDrawImage(context,frame,imageRef);
+
+    CGContextRestoreGState(context);
+
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     //set the imageview with the new image
-    [imageView setImage:newImg];
+    [imageView setImage:newImage];
     
-    CGImageRelease(cgimg);
 }
 
 //here onwards are automatically generated methods
