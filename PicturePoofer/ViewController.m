@@ -20,8 +20,9 @@
         CGRect frame =  CGRectMake(0,0,imageView.image.size.width,imageView.image.size.height);
     
     CGContextSetAlpha (context,0.5f);
-    CGContextSetShadow (context,frame.size,1.0f);
+
     CGContextSetRGBFillColor (context,1.0f,0.5f,0.5f,1.0f);
+    CGContextFillRect(context, frame);
                                    
 
     CGContextSaveGState(context);
