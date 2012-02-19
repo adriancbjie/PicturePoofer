@@ -1,3 +1,10 @@
+//
+//  ImageDataConverter.m
+//  PicturePoofer
+//
+//  Created by Adrian Cheng Bing Jie on 19/2/12.
+//  Copyright (c) 2012 adriancbjie. All rights reserved.
+//
 #import "ImageDataConverter.h"
 
 
