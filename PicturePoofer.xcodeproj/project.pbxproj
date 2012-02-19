@@ -19,6 +19,7 @@
 		3AAD851C14ECBC43003122DF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAD851B14ECBC43003122DF /* CoreImage.framework */; };
 		3AAD852614ECD341003122DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAD852514ECD341003122DF /* QuartzCore.framework */; };
 		3ADA4FF014EFD78F007B2785 /* tower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA4FEF14EFD78F007B2785 /* tower.jpg */; };
+		3ADA4FF314F09D98007B2785 /* ImageDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA4FF214F09D98007B2785 /* ImageDataConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		3AAD851B14ECBC43003122DF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		3AAD852514ECD341003122DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3ADA4FEF14EFD78F007B2785 /* tower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tower.jpg; sourceTree = "<group>"; };
+		3ADA4FF114F09D98007B2785 /* ImageDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDataConverter.h; sourceTree = "<group>"; };
+		3ADA4FF214F09D98007B2785 /* ImageDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDataConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 		3A77BC6814E221D200AE45A4 /* PicturePoofer */ = {
 			isa = PBXGroup;
 			children = (
+				3ADA4FF114F09D98007B2785 /* ImageDataConverter.h */,
+				3ADA4FF214F09D98007B2785 /* ImageDataConverter.m */,
 				3A77BC7114E221D200AE45A4 /* AppDelegate.h */,
 				3A77BC7214E221D200AE45A4 /* AppDelegate.m */,
 				3A77BC7414E221D200AE45A4 /* ViewController.h */,
@@ -187,6 +192,7 @@
 				3A77BC6F14E221D200AE45A4 /* main.m in Sources */,
 				3A77BC7314E221D200AE45A4 /* AppDelegate.m in Sources */,
 				3A77BC7614E221D200AE45A4 /* ViewController.m in Sources */,
+				3ADA4FF314F09D98007B2785 /* ImageDataConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

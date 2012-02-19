@@ -7,40 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "ImageDataConverter.h"
 
 @implementation ViewController
 @synthesize imageView, applyEffectButton;
 
 -(IBAction) applyEffect:(id)sender{
-    //prepare settings for my blank context, then declare the context
-    UIGraphicsBeginImageContextWithOptions(imageView.image.size, YES, 0);
     
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGImageRef imageRef =  imageView.image.CGImage;
-        CGRect frame =  CGRectMake(0,0,imageView.image.size.width,imageView.image.size.height);
-    
-    CGContextSetAlpha (context,0.5f);
-
-    CGContextSetRGBFillColor (context,1.0f,0.5f,0.5f,1.0f);
-    CGContextFillRect(context, frame);
-                                   
-
-    CGContextSaveGState(context);
-    CGContextTranslateCTM(context, 0.0f, imageView.image.size.height);
-    CGContextScaleCTM(context, 1.0f, -1.0f);
+    unsigned char *rawData = [ImageDataConverter convertUIImageToBitmapRGBA8:imageView.image];
     
 
+    int byteIndex = 0;
+    for (int i = 0 ; i< (imageView.image.size.height * imageView.image.size.width) ; ++i)
+    {
+        int outputColor = (rawData[byteIndex] + rawData[byteIndex+1] +
+                           rawData[byteIndex+2]) / 3;
+        
+        rawData[byteIndex] = (char) (outputColor);
+        rawData[byteIndex+1] = (char) (outputColor);
+        rawData[byteIndex+2] = (char) (outputColor);
+        
+        byteIndex += 4;
+    }
     
-    CGContextDrawImage(context,frame,imageRef);
-
-    CGContextRestoreGState(context);
-
+    UIImage *newImage = [ImageDataConverter convertBitmapRGBA8ToUIImage:rawData 
+                                                       withWidth:imageView.image.size.width 
+                                                      withHeight:imageView.image.size.height];
     
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    //set the imageview with the new image
     [imageView setImage:newImage];
-    
+
 }
 
 //here onwards are automatically generated methods
