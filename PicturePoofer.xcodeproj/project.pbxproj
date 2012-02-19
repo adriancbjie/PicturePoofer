@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A41745E14EFAF2600D166E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6614E221D200AE45A4 /* CoreGraphics.framework */; };
+		3A448D6214F0B3B40023B49F /* AdriansFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A448D6114F0B3B40023B49F /* AdriansFilter.m */; };
 		3A77BC6314E221D200AE45A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6214E221D200AE45A4 /* UIKit.framework */; };
 		3A77BC6514E221D200AE45A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77BC6414E221D200AE45A4 /* Foundation.framework */; };
 		3A77BC6D14E221D200AE45A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A77BC6B14E221D200AE45A4 /* InfoPlist.strings */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A448D6014F0B3B40023B49F /* AdriansFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdriansFilter.h; sourceTree = "<group>"; };
+		3A448D6114F0B3B40023B49F /* AdriansFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdriansFilter.m; sourceTree = "<group>"; };
 		3A77BC5E14E221D200AE45A4 /* PicturePoofer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturePoofer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A77BC6214E221D200AE45A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A77BC6414E221D200AE45A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +104,8 @@
 				3A77BC7514E221D200AE45A4 /* ViewController.m */,
 				3A77BC7714E221D200AE45A4 /* ViewController.xib */,
 				3A77BC6914E221D200AE45A4 /* Supporting Files */,
+				3A448D6014F0B3B40023B49F /* AdriansFilter.h */,
+				3A448D6114F0B3B40023B49F /* AdriansFilter.m */,
 			);
 			path = PicturePoofer;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				3A77BC7314E221D200AE45A4 /* AppDelegate.m in Sources */,
 				3A77BC7614E221D200AE45A4 /* ViewController.m in Sources */,
 				3ADA4FF314F09D98007B2785 /* ImageDataConverter.m in Sources */,
+				3A448D6214F0B3B40023B49F /* AdriansFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

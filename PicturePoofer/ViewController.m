@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ImageDataConverter.h"
+#import "AdriansFilter.h"
 
 @implementation ViewController
 @synthesize imageView, applyEffectButton;
@@ -16,19 +17,7 @@
     
     unsigned char *rawData = [ImageDataConverter convertUIImageToBitmapRGBA8:imageView.image];
     
-
-    int byteIndex = 0;
-    for (int i = 0 ; i< (imageView.image.size.height * imageView.image.size.width) ; ++i)
-    {
-        int outputColor = (rawData[byteIndex] + rawData[byteIndex+1] +
-                           rawData[byteIndex+2]) / 3;
-        
-        rawData[byteIndex] = (char) (outputColor);
-        rawData[byteIndex+1] = (char) (outputColor);
-        rawData[byteIndex+2] = (char) (outputColor);
-        
-        byteIndex += 4;
-    }
+    rawData = [AdriansFilter applyEffect:rawData withImageSize:imageView.image.size];
     
     UIImage *newImage = [ImageDataConverter convertBitmapRGBA8ToUIImage:rawData 
                                                        withWidth:imageView.image.size.width 
