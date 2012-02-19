@@ -10,17 +10,26 @@
 
 @interface AdriansFilter : NSObject
 
-/**
- * Clamps the intensity level between 0 - 255.
- *
- * @param i The intensity level.
- */
-#define safe(i) (MIN(255, MAX(0, i)))
 
 /**
  * to be documented
  */
-+(unsigned char *) applyEffect:(unsigned char *) rawData withImageSize:(CGSize)size;
++(unsigned char *) applyLomoEffect:(unsigned char *) rawData withImageSize:(CGSize)size;
+
++(unsigned char *) applyContrastValue:(float)val onData:(unsigned char *)rawData withImageSize:(CGSize) size;
+
++(unsigned char *) applyBiasValue:(float)val
+                           onData:(unsigned char *)rawData
+                    withImageSize:(CGSize) size;
+
++(unsigned char *) applyTintWithMinRGB:(NSArray*)minRGB
+                            withMaxRGB:(NSArray*)maxRGB
+                                onData:(unsigned char *) rawData
+                         withImageSize:(CGSize)size;
+
++(unsigned char *) convoluteWithKernel:(NSArray*)kernel
+                                onData:(unsigned char *) rawData
+                         withImageSize:(CGSize)size;
 
 /**
  * to be documented

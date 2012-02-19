@@ -14,11 +14,13 @@
 @synthesize imageView, applyEffectButton;
 
 -(IBAction) applyEffect:(id)sender{
-    
+    //get raw data from UIImage
     unsigned char *rawData = [ImageDataConverter convertUIImageToBitmapRGBA8:imageView.image];
     
-    rawData = [AdriansFilter applyEffect:rawData withImageSize:imageView.image.size];
+    //apply lomo effect to raw data
+    rawData = [AdriansFilter applyLomoEffect:rawData withImageSize:imageView.image.size];
     
+    //convert raw data back to UIImage
     UIImage *newImage = [ImageDataConverter convertBitmapRGBA8ToUIImage:rawData 
                                                        withWidth:imageView.image.size.width 
                                                       withHeight:imageView.image.size.height];
