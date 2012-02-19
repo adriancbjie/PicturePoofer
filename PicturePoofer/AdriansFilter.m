@@ -81,7 +81,6 @@
     return rawData;
 }
 
-//a function that applies all pixels with specified RGB values
 +(unsigned char *) applyTintWithMinRGB:(NSArray*)minRGB
                       withMaxRGB:(NSArray*)maxRGB
                         onData:(unsigned char *) rawData
@@ -152,7 +151,6 @@
 
 }
 
-//simple greyscale function with fixed scale of color/3
 +(unsigned char *) applyGreyScaleEffect:(unsigned char *) rawData withImageSize:(CGSize)size
 {
     int byteIndex = 0;
