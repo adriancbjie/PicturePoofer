@@ -63,6 +63,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A448D6414F0BD170023B49F /* Image Processing */ = {
+			isa = PBXGroup;
+			children = (
+				3A448D6014F0B3B40023B49F /* AdriansFilter.h */,
+				3A448D6114F0B3B40023B49F /* AdriansFilter.m */,
+				3ADA4FF114F09D98007B2785 /* ImageDataConverter.h */,
+				3ADA4FF214F09D98007B2785 /* ImageDataConverter.m */,
+			);
+			name = "Image Processing";
+			sourceTree = "<group>";
+		};
 		3A77BC5314E221D200AE45A4 = {
 			isa = PBXGroup;
 			children = (
@@ -96,16 +107,13 @@
 		3A77BC6814E221D200AE45A4 /* PicturePoofer */ = {
 			isa = PBXGroup;
 			children = (
-				3ADA4FF114F09D98007B2785 /* ImageDataConverter.h */,
-				3ADA4FF214F09D98007B2785 /* ImageDataConverter.m */,
+				3A448D6414F0BD170023B49F /* Image Processing */,
 				3A77BC7114E221D200AE45A4 /* AppDelegate.h */,
 				3A77BC7214E221D200AE45A4 /* AppDelegate.m */,
 				3A77BC7414E221D200AE45A4 /* ViewController.h */,
 				3A77BC7514E221D200AE45A4 /* ViewController.m */,
 				3A77BC7714E221D200AE45A4 /* ViewController.xib */,
 				3A77BC6914E221D200AE45A4 /* Supporting Files */,
-				3A448D6014F0B3B40023B49F /* AdriansFilter.h */,
-				3A448D6114F0B3B40023B49F /* AdriansFilter.m */,
 			);
 			path = PicturePoofer;
 			sourceTree = "<group>";
